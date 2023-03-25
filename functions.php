@@ -10,7 +10,22 @@ function load_my_scripts()
     wp_enqueue_style('style-css', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('test', get_stylesheet_directory_uri() . '/responsive.css');
 
-
 }
 add_action('wp_enqueue_scripts', 'load_my_scripts');
+?>
+
+<?php
+function register_navwalker()
+{
+    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action('after_setup_theme', 'register_navwalker');
+?>
+
+<?php
+register_nav_menus(
+    array(
+        'primary' => __('Primary Menu', 'top-menu'),
+    )
+);
 ?>
