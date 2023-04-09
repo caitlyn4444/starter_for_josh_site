@@ -21,67 +21,50 @@ Template Name: Home page
 
 <section class="container-fluid articlesbg">
     <div class="container">
-        <h3 class="text-center"> LATEST ARTICLES</h3>
+        <h3 class="text-center">
+            <?php the_field('titleforarticles'); ?>
+        </h3>
         <div class="row">
             <div class="col-md-4 text-center">
-                <img class="img-fluid"
-                    src="http://170.187.231.66/~mesh16/wp-content/themes/starter_for_josh_site/images/portrait.jpg">"
-                alt="portrait">
-                <h4 class="article-title"> A PORTRAIT</h4>
-                <p class="date"> 12 December 2020</p>
-                <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more
-                    STS s cholars are
-                    starting
-                    to explore and intervene in the arts. This object of study brings new challenges and
-                    opportunities that
-                    we want to explore in this session. We would like to gather first of all simply new kinds of
-                    knowledge
-                    arising from STS study of the arts.
+                <img class="img-fluid" src="<?php the_field('articleimage'); ?>">
+                <h4 class="article-title">
+                    <?php the_field('articletitle'); ?>
+                </h4>
+                <p class="date">
+                    <?php the_field('articledate'); ?>
                 </p>
+                <p class="article-p">
+                    <?php the_field('articleexcerpt'); ?>
                 </p>
-                <a class="readmore" href="#">CONTINUE READING</a>
+                <a href="<?php the_field('readmore'); ?>" class="readmore">CONTINUE READING</a>
             </div>
 
             <div class="col-md-4 text-center">
-                <img class="img-fluid"
-                    src="http://170.187.231.66/~mesh16/wp-content/themes/starter_for_josh_site/images/model.jpg"
-                    alt="model">
-                <h4 class="article-title"> A MODEL</h4>
-                <p class="date"> 12 December 2020</p>
-                <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more
-                    STS s cholars are
-                    starting
-                    to
-                    explore and intervene in the arts. This object of study brings new challenges and opportunities
-                    that we
-                    want
-                    to explore in this session. We would like to gather first of all simply new kinds of knowledge
-                    arising
-                    from
-                    STS study of the arts.
+                <img class="img-fluid" src="<?php the_field('articleimage_middle'); ?>">
+                <h4 class="article-title">
+                    <?php the_field('articletitle_middle'); ?>
+                </h4>
+                <p class="date">
+                    <?php the_field('articledate_middle'); ?>
                 </p>
-                <a class="readmore" href="#">CONTINUE READING</a>
+                <p class="article-p">
+                    <?php the_field('articleexcerpt_middle'); ?>
+                </p>
+                <a href="<?php the_field('readmore_middle'); ?>" class="readmore">CONTINUE READING</a>
             </div>
 
             <div class="col-md-4 text-center">
-                <img class="img-fluid"
-                    src="http://170.187.231.66/~mesh16/wp-content/themes/starter_for_josh_site/images/gamesdesign.jpg"
-                    alt="games design">
-                <h4 class="article-title"> A GAMES DESIGN</h4>
-                <p class="date"> 12 December 2020</p>
-                <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more
-                    STS s cholars are
-                    starting
-                    to
-                    explore and intervene in the arts. This object of study brings new challenges and opportunities
-                    that we
-                    want
-                    to explore in this session. We would like to gather first of all simply new kinds of knowledge
-                    arising
-                    from
-                    STS study of the arts.
+                <img class="img-fluid" src="<?php the_field('articleimage_right'); ?>">
+                <h4 class="article-title">
+                    <?php the_field('articletitle_right'); ?>
+                </h4>
+                <p class="date">
+                    <?php the_field('articledate_right'); ?>
                 </p>
-                <a class="readmore" href="#">CONTINUE READING</a>
+                <p class="article-p">
+                    <?php the_field('articleexcerpt_right'); ?>
+                </p>
+                <a href="<?php the_field('readmore_right'); ?>" class="readmore">CONTINUE READING</a>
             </div>
         </div> <!-- row -->
     </div> <!-- container -->
