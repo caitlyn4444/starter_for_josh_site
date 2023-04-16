@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,8 +44,7 @@
 </head>
 
 <body>
-    <header class="container-fluid"
-        style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">
+    <header class="container-fluid small_herobg">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <!-- Brand -->
@@ -79,7 +77,6 @@
                 </div>
             </nav>
             <div class="tag-smallpage-header">
-                <h1 class="smallpage-title"><?php the_field('projectsheadertitle'); ?></h1>
             </div>
 
 
