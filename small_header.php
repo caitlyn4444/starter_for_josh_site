@@ -76,7 +76,7 @@
                     </ul>
                 </div>
             </nav>
-            <div class="tag-smallpage-header">
+            <div class="tag">
             </div>
 
 
