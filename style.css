@@ -165,10 +165,23 @@ footer p {
     height: 40vh;
 }
 
-
 img.attachment-thumbnail.size-thumbnail.wp-post-image {
     margin-left: 10px;
     float: left;
     margin-right: 10px;
     padding: 10px;
+}
+
+.thepost {
+    padding-bottom: 20px;
+}
+
+.post-separator {
+    width: 50%;
+    border: 1px solid grey;
+    opacity: 0.5;
+}
+
+.maintext {
+    padding-top: 20px;
 }

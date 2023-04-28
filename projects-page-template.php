@@ -4,7 +4,7 @@ Template Name: Projects
 */
 ?>
 
-<?php require_once('small_header.php'); ?>
+<?php require_once('page_header.php'); ?>
 <div class="container-fluid maincontainer">
     <div class="container">
         <div class="row">
@@ -25,7 +25,7 @@ Template Name: Projects
                     <?php while ($the_query->have_posts()):
                         $the_query->the_post(); ?>
                         <div class="thepost">
-                            <h2>
+                            <h2 class="post-title">
                                 <?php the_title(); ?>
                             </h2>
 
@@ -38,6 +38,7 @@ Template Name: Projects
                             </p>
                             <a class="readmore" href="<?php the_permalink(); ?>"> CONTINUE READING</a>
                         </div>
+                        <hr class="post-separator">
                     <?php endwhile; ?>
                     <!-- end of the loop -->
 
